@@ -1,0 +1,256 @@
+.weather-div {
+    background-image: url("../../assets/img/temp.jpg");
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+
+    i {
+        font-size: 20px !important;
+        color: gold;
+    }
+
+    .weather-icon {
+        width: 70px;
+    }
+
+    .main-container {
+        position: relative;
+        width: 300px;
+
+        .fa-times {
+            position: absolute;
+            top: 7%;
+            right: 10%;
+            color: red;
+        }
+    }
+
+    .weather-box {
+        background: black;
+        color: white;
+        width: 300px;
+        height: 350px;
+        font-size: 20px;
+        box-shadow: 2px 4px 3px gold;
+        text-align: center;
+        transition: all 0.4s;
+        opacity: 0.87;
+        position: absolute;
+        right: 0;
+    }
+
+    .weather-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            color: white;
+        }
+    }
+    .weather-box:hover {
+        color: gold;
+        box-shadow: 0px 10px 20px gold;
+        span {
+            color: gold;
+        }
+
+        transform: scaleX(1.1);
+        opacity: 1;
+    }
+
+    .sunrice,
+    .sunset {
+        width: 50px;
+    }
+    .wind {
+        width: 40px;
+    }
+
+    .time {
+        color: green;
+    }
+
+    ul {
+        width: 300px;
+        height: 200px;
+        background-color: black;
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        color: #ccc;
+        opacity: 0.68;
+        box-shadow: 2px 1px 20px gold;
+        transition: all 1s;
+    }
+    ul:hover {
+        opacity: 1;
+        cursor: pointer;
+        transform: scale(1.1);
+        border: 4px solid gold;
+        color: gold;
+        font-size: 38px;
+    }
+
+    li {
+        list-style-type: none;
+    }
+}
+.main-container {
+    // background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418) ), url('https://hdwallpaper20.com/wp-content/uploads/2017/07/wallpaper-wp4001752.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search {
+    outline: none;
+    padding: 20px 7%;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 5%;
+    background: rgba(250, 250, 250, 0.85);
+}
+
+.city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 8%;
+    border-radius: 20px;
+    background: rgba(250, 250, 250, 0.9);
+    box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.9);
+}
+
+p {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.city-temp {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #1e2432;
+    text-align: center;
+}
+
+.city sup {
+    font-size: 0.5em;
+}
+
+.city-name {
+    font-size: 2em;
+}
+
+.city-name sup {
+    padding: 0.2em 0.6em;
+    margin-left: 0.2em;
+    border-radius: 30px;
+    color: #fff;
+    background: #ff8c00;
+}
+
+.city-icon {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .search {
+        padding: 20px 15%;
+    }
+
+    .city {
+        padding: 40px 20%;
+    }
+}
+
+.main-container {
+    background: black;
+    color: white;
+    width: 350px;
+    font-size: 20px;
+    box-shadow: 2px 4px 3px gold;
+    text-align: center;
+    transition: all 0.4s;
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+
+    .city {
+        margin-top: 10px !important;
+        height: 350px;
+        width: 80%;
+    }
+
+    .search {
+        width: 90%;
+        height: 50px !important;
+    }
+}
+
+.go-back {
+    width: 100px;
+    height: 40px;
+    background: black;
+    color: gold;
+    border: 2px solid gold;
+    position: fixed;
+    bottom: 10%;
+    left: 1%;
+    transition: all 0.4s;
+    &:hover {
+        background: gold;
+        color: black;
+        border: 2px solid black;
+
+        i {
+            color: black !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .weather-box {
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .weather-div {
+        .go-back {
+            left: 70%;
+            bottom: 1%;
+        }
+    }
+
+    .main-container {
+        margin: 0 auto;
+    }
+}

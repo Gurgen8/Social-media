@@ -1,0 +1,78 @@
+.feed {
+    flex: 5.5;
+    padding-top: 40px;
+}
+
+.feedWrapper {
+    padding: 20px;
+}
+
+.empty-img {
+    width: 100%;
+}
+
+.spiner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px !important;
+    margin-bottom: -20%;
+    position: relative;
+
+    .spiner-div {
+        position: absolute;
+        top: 20%;
+    }
+}
+
+.empty-post-img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.search_form {
+    position: relative;
+    width: 100%;
+    height: 30px;
+
+    input {
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        width: 100%;
+        position: absolute;
+        top: -17%;
+        padding-left: 10px;
+        height: 40px;
+        transition: all 0.3s;
+
+        &:hover ~ i {
+            transform: translateX(-500%);
+            color: green;
+            box-shadow: 5px 0 10px #ccc;
+        }
+
+        &:focus {
+            background: #f3e4e4;
+        }
+    }
+
+    i {
+        position: absolute;
+        right: 5%;
+        top: 20%;
+        font-size: 20px !important;
+        transition: all 0.3s;
+    }
+}
+
+.post {
+    .slick-slider {
+        width: 100vh;
+    }
+
+    .slides .slick-arrow {
+        left: 5% !important;
+    }
+}

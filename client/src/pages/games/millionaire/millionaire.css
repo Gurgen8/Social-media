@@ -1,0 +1,433 @@
+.app {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  background-color: #020230;
+}
+
+.app .go-back {
+  top: 2%;
+}
+
+.main {
+  width: 75%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#020230)), url("../../../assets/img/gamebg.jpg") center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230), url("../../../assets/img/gamebg.jpg") center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.startInput {
+  margin-bottom: 10px;
+}
+
+.pyramid, .open-querybar {
+  width: 25%;
+  background-color: #020230;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.moneyList {
+  padding: 20px;
+  list-style: none;
+  width: 100%;
+}
+
+.moneyListItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.moneyListItem.active {
+  background-color: teal;
+}
+
+.moneyListItemNumber {
+  width: 30%;
+  font-size: 18px;
+  font-weight: 100;
+  color: whitesmoke;
+}
+
+.moneyListItemAmount {
+  font-size: 20px;
+  font-weight: 300;
+  color: yellowgreen;
+}
+
+.top {
+  height: 50%;
+  position: relative;
+}
+
+.timer {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 80px;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.bottom {
+  height: 50%;
+}
+
+.trivia {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.question {
+  width: 80%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#100241), to(black));
+  background: linear-gradient(#100241, black);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-size: 20px;
+}
+
+.answers {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.answer {
+  width: 40%;
+  padding: 10px;
+  margin: 0 10px 20px 10px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0e0124), to(#22074d));
+  background: linear-gradient(#0e0124, #22074d);
+  border: 1px solid white;
+  border-radius: 15px;
+  font-weight: 300;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.answer:hover,
+.answer.active {
+  background: mediumblue;
+}
+
+.answer.correct {
+  -webkit-animation: correct 3s ease forwards;
+          animation: correct 3s ease forwards;
+}
+
+@-webkit-keyframes correct {
+  0%,
+  22%,
+  42% {
+    background: mediumblue;
+  }
+  20%,
+  40%,
+  60% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0e0124), to(#22074d));
+    background: linear-gradient(#0e0124, #22074d);
+  }
+  62%,
+  100% {
+    background: green;
+  }
+}
+
+@keyframes correct {
+  0%,
+  22%,
+  42% {
+    background: mediumblue;
+  }
+  20%,
+  40%,
+  60% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0e0124), to(#22074d));
+    background: linear-gradient(#0e0124, #22074d);
+  }
+  62%,
+  100% {
+    background: green;
+  }
+}
+
+.answer.wrong {
+  -webkit-animation: wrong 3s ease forwards;
+          animation: wrong 3s ease forwards;
+}
+
+@-webkit-keyframes wrong {
+  0%,
+  22%,
+  42% {
+    background: mediumblue;
+  }
+  20%,
+  40%,
+  60% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0e0124), to(#22074d));
+    background: linear-gradient(#0e0124, #22074d);
+  }
+  62%,
+  100% {
+    background: crimson;
+  }
+}
+
+@keyframes wrong {
+  0%,
+  22%,
+  42% {
+    background: mediumblue;
+  }
+  20%,
+  40%,
+  60% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0e0124), to(#22074d));
+    background: linear-gradient(#0e0124, #22074d);
+  }
+  62%,
+  100% {
+    background: crimson;
+  }
+}
+
+.endText {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.help-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
+}
+
+.help-div .help-icon {
+  width: 80px;
+  height: 80px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.help-div .help-icon:hover {
+  cursor: pointer;
+  background: teal;
+  border-radius: 50%;
+}
+
+.start {
+  width: 250px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.startInput {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.startInput:focus {
+  outline: none;
+}
+
+.startButton {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.help {
+  width: 100%;
+  position: relative;
+}
+
+.help .help-section {
+  width: 350px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background: darkblue;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.help button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+progress {
+  -webkit-appearance: none;
+  -moz-appearane: none;
+  -moz-appearance: none;
+       appearance: none;
+  height: 0;
+  height: 35px;
+  border: none;
+  background-color: #000000;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+          box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+  padding: 2px;
+  display: block;
+  margin-top: -10px;
+}
+
+progress::-webkit-progress-bar {
+  background: #000000;
+  border-radius: 50px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress::-moz-progress-bar {
+  border-radius: 50px;
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.query-bar {
+  width: 100px;
+  height: 40px;
+  background-color: darkblue;
+  position: fixed;
+  right: 1%;
+  top: 2%;
+  background-color: black;
+  border: 2px solid cornflowerblue;
+  color: cornflowerblue;
+  display: none;
+  z-index: 999;
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    width: 100%;
+  }
+  .query-bar {
+    display: block;
+  }
+  .question {
+    margin-bottom: 10px;
+  }
+  .pyramid, .open-querybar {
+    display: none;
+  }
+}
+
+.open-querybar {
+  position: absolute;
+  display: block !important;
+  right: 0;
+  width: 320px;
+  overflow-y: scroll;
+  height: 100vh;
+  padding-right: 100px;
+  padding-top: 80px;
+}
+/*# sourceMappingURL=millionaire.css.map */

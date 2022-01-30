@@ -1,0 +1,442 @@
+#root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+}
+
+.root {
+  background: #080808;
+  color: white;
+  height: 100%;
+}
+
+.root .svg .button span {
+  color: olivedrab;
+}
+
+.root .svg .button span:hover {
+  color: whitesmoke;
+}
+
+.root .svg .button rect {
+  stroke: olivedrab;
+}
+
+.root .shareCancelImg i {
+  background-color: #ccc !important;
+}
+
+.root .photo-ok {
+  background-color: gray;
+  height: 24px;
+}
+
+.root .Toastify__toast {
+  -webkit-box-shadow: 5px 10px 5px #ccc;
+          box-shadow: 5px 10px 5px #ccc;
+  height: 120px;
+  color: white;
+  background-color: #ccc !important;
+}
+
+.root .notifications-div {
+  background-color: #202020;
+  color: gray;
+}
+
+.root .notifications-div .clear-div {
+  background-color: black;
+}
+
+.root .notifications-div .notification-title {
+  background-color: black;
+}
+
+.root .chatonline-open {
+  background-color: black;
+}
+
+.root .chatMenuWrapper {
+  background-color: black;
+}
+
+.root .location-div .fa-times {
+  color: red !important;
+}
+
+.root .cahtOnline {
+  background-color: black;
+}
+
+.root .chatOnline-menu {
+  background-color: black;
+}
+
+.root ::-webkit-scrollbar-track {
+  background: #5c5b5b;
+}
+
+.root .sidebar {
+  background: #202020;
+}
+
+.root #bottom {
+  background: black;
+  border: 1px solid gray;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.root #bottom:hover {
+  color: cornflowerblue;
+}
+
+.root .sidebarListItemText {
+  color: #ccc !important;
+}
+
+.root .sidebarFriendName {
+  color: gray;
+}
+
+.root .sidebarListItem i {
+  color: cornflowerblue !important;
+}
+
+.root .post {
+  background: #202020;
+}
+
+.root .scroll-div {
+  background: black;
+}
+
+.root .shareWrapper {
+  background: #202020;
+}
+
+.root .shareWrapper .shareInput {
+  background: #202020;
+  color: whitesmoke;
+}
+
+.root .shareWrapper .fa-window-close {
+  color: gray;
+}
+
+.root .shareWrapper .fa-window-close:hover {
+  color: red;
+}
+
+.root .shareWrapper .shareOptionText, .root .shareWrapper .postLikeCounter {
+  color: gray;
+}
+
+.root .postLikeCounter {
+  color: gray;
+}
+
+.root .postDate {
+  color: honeydew;
+}
+
+.root #comments_span {
+  color: gray !important;
+}
+
+.root .fa-user-secret {
+  color: #ccc !important;
+}
+
+.root .slick-slider {
+  background: #202020;
+}
+
+.root .slick-slider .text-slide span {
+  color: gray !important;
+}
+
+.root .likes-user-name {
+  color: gray;
+}
+
+.root .comment_form textarea {
+  background: whitesmoke;
+}
+
+.root .comment_div {
+  background: #202020;
+}
+
+.root .desc_comment span {
+  color: gray !important;
+}
+
+.root .time {
+  color: #ccc;
+}
+
+.root .emoji-picker-react {
+  background: grey;
+}
+
+.root .setting-li i {
+  color: honeydew;
+  margin-left: 5px;
+}
+
+.root .birthdayContainer {
+  background: #202020;
+}
+
+.root .chatOnline {
+  background: #202020;
+}
+
+.root .chatOnline .chatOnlineName {
+  color: grey;
+}
+
+.root .sidebarListItem {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.root .sidebarListItem:hover {
+  background: #7e7d7d;
+}
+
+.root #spam-length {
+  color: #ccc !important;
+}
+
+.root .spam-list {
+  background: #202020;
+}
+
+.root .span-name {
+  color: #ccc !important;
+  margin-left: 6px;
+}
+
+.root .rightbar {
+  background: #202020;
+  padding-left: 10px;
+  border-radius: 7px;
+}
+
+.root .user-followins-div .rightbarFollowButton {
+  color: aliceblue !important;
+}
+
+.root .rightbarFollowingName {
+  color: #ccc;
+  text-transform: capitalize;
+}
+
+.root .friends-list {
+  background: #202020;
+}
+
+.root .friends-list .follow-span {
+  color: #ccc;
+  text-transform: capitalize;
+}
+
+.root .follow-div:hover {
+  background: black;
+}
+
+.root .information-user {
+  background: #202020;
+}
+
+.root .rightbarInfoKey {
+  color: white !important;
+}
+
+.root .post-gallery {
+  background: #202020;
+}
+
+.root .postimg-div i {
+  color: black;
+}
+
+.root .chatMenu {
+  background: black  !important;
+}
+
+.root .chatBox {
+  background: #202020;
+}
+
+.root .chatOnline {
+  background: black;
+}
+
+.root .conversation {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 50px;
+}
+
+.root .conversation:hover {
+  background: #202020;
+}
+
+.root .chatMessageInput {
+  background: black;
+  color: white;
+}
+
+.root .chatOnlineImg {
+  border: none;
+}
+
+.root .logo-page {
+  background: #202020 !important;
+}
+
+.root .comment_textarea {
+  background: black !important;
+  color: whitesmoke !important;
+}
+
+.root .empti-div {
+  height: 400px;
+  text-align: center;
+  padding-top: 175px;
+  font-size: 28px;
+  -webkit-box-flex: 5.5;
+      -ms-flex: 5.5 1;
+          flex: 5.5 1;
+}
+
+.root .user-div {
+  background: #202020;
+}
+
+.root .user-div .user-name {
+  color: #ccc;
+  text-transform: capitalize;
+}
+
+.root .empty-div span {
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50% !important;
+}
+
+.root .rightbarInfoValue {
+  color: #ccc;
+  text-transform: capitalize;
+}
+
+.root .conv-title {
+  border-bottom: 2px solid #ccc;
+}
+
+.root .chat-online-title {
+  border-bottom: 2px solid #ccc;
+}
+
+.root .typing {
+  font-style: italic;
+  color: #ccc;
+}
+
+.root .rightbar-open {
+  background: #202020;
+}
+
+.root .sidebar-open {
+  background: #202020 !important;
+}
+
+.rightbar-togle {
+  width: 40px;
+  height: 30px;
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .rightbar {
+    position: absolute !important;
+    width: 0;
+    right: 0;
+    height: 0;
+  }
+  .rightbar-togle {
+    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    left: 6%;
+    top: 1%;
+    font-size: 10px !important;
+    z-index: 999;
+    color: #318CE7;
+    background: whitesmoke;
+    background: transparent;
+    border: none;
+  }
+  .rightbar-togle i {
+    font-size: 25px !important;
+    color: white;
+  }
+}
+
+.rightbar-open {
+  display: block !important;
+  position: absolute !important;
+  z-index: 2 !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 340px;
+  padding: 10px;
+  transition: all 0.5s;
+  right: 0;
+  width: 320px;
+  height: 100vh;
+  position: fixed !important;
+  top: 0%;
+  padding-left: 20px;
+  background: white;
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 992px) {
+  .sidebar {
+    position: absolute;
+    width: 0;
+    left: 0;
+  }
+  .togle-button {
+    display: block;
+  }
+}
+
+.sidebar-open {
+  display: block;
+  position: absolute;
+  z-index: 999;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #202020;
+  padding: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+  position: fixed;
+  top: 50px;
+  padding-left: 20px;
+  padding-top: 30px;
+  background: white;
+}
+/*# sourceMappingURL=style.css.map */

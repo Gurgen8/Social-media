@@ -1,0 +1,236 @@
+.game-zone {
+  color: gold;
+  background: black;
+  height: 100vh;
+  min-height: 500px;
+  /* cpu leave */
+  /* user -leave */
+  /* draw -leave */
+}
+
+.game-zone .go-back {
+  left: 87%;
+}
+
+.game-zone img {
+  width: 300px;
+  height: 300px;
+}
+
+.game-zone h1 {
+  font-size: 40px;
+  -webkit-box-shadow: 10px 10px 8px gray;
+          box-shadow: 10px 10px 8px gray;
+  margin-top: 10px;
+  color: honeydew;
+}
+
+.game-zone .player-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.game-zone .winner {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.game-zone .cpu-section {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.game-zone .buttons-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 40px;
+}
+
+.game-zone .buttons-section button {
+  width: 90px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: black;
+  color: gold;
+  font-size: 20px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  -webkit-box-shadow: 2px 2px 5px #ccc;
+          box-shadow: 2px 2px 5px #ccc;
+}
+
+.game-zone .buttons-section button:hover {
+  border: 3px solid gold;
+}
+
+.game-zone .winner {
+  font-family: cursive;
+  font-weight: 500;
+  font-size: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.game-zone h3 {
+  margin: 0;
+}
+
+.game-zone .start {
+  margin-top: 200px;
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: black;
+  font-size: 23px;
+  font-weight: 700;
+  font-variant: small-caps;
+  border: 2px solid gold;
+  color: gold;
+}
+
+.game-zone .start:hover {
+  background-color: GOLD;
+  color: black;
+}
+
+.game-zone h2:nth-child(1) {
+  border-bottom: 1px dashed #ccc;
+  color: red;
+}
+
+.game-zone h2:nth-child(2) {
+  color: green;
+}
+
+.game-zone .cpu-enter-active {
+  opacity: 1;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  font-style: italic;
+}
+
+.game-zone .cpu-leave {
+  -webkit-transform: translate(550px, 70px);
+          transform: translate(550px, 70px);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  color: green;
+  font-size: 10px;
+}
+
+.game-zone .cpu-leave-active {
+  opacity: 0.2;
+}
+
+.game-zone .user-leave {
+  -webkit-transform: translate(-450px, 70px);
+          transform: translate(-450px, 70px);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: all 650ms;
+  transition: all 650ms;
+  color: green;
+  font-size: 10px;
+}
+
+.game-zone .user-leave-active {
+  opacity: 0.2;
+}
+
+.game-zone .user-enter-active {
+  opacity: 1;
+  font-style: italic;
+}
+
+.game-zone .user-enter {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.game-zone .draw-leave {
+  -webkit-transform: scale3d(1.4, 0.5, 1.9);
+          transform: scale3d(1.4, 0.5, 1.9);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.game-zone span {
+  position: absolute;
+  top: 100px;
+}
+
+.game-zone img[alt="winner"] {
+  border-bottom: 8px solid gold;
+}
+
+.game-zone .line {
+  background-color: white;
+  height: 4px;
+  width: 150px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.game-zone .inline {
+  position: absolute;
+  width: 0;
+  -webkit-transition: all 2.1s;
+  transition: all 2.1s;
+  height: 7px;
+}
+
+.game-zone audio {
+  position: fixed !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  background-color: black;
+  width: 260px;
+}
+
+@media screen and (max-width: 767px) {
+  .game-zone img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .game-zone .buttons-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-left: 5px;
+  }
+  .game-zone .buttons-section button {
+    margin-top: 10px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .game-zone .go-back {
+    left: 68%;
+  }
+  .game-zone h2 {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  .game-zone .audio {
+    display: none;
+  }
+}
+/*# sourceMappingURL=scissors.css.map */

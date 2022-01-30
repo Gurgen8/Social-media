@@ -1,0 +1,96 @@
+.videochatRoom {
+    background-color: violet;
+    height: 100vh;
+    text-align: center;
+
+    .fa-video-camera {
+        font-size: 35px !important;
+    }
+
+    .videochat-user {
+        text-transform: capitalize;
+        color: whitesmoke;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    i {
+        font-size: 30px !important;
+        width: 50px;
+        height: 50px;
+        z-index: 999;
+        cursor: pointer;
+        transition: all 0.4s;
+        &:hover {
+            color: white;
+            transform: rotate(20deg);
+        }
+    }
+
+    .videos-item {
+        width: 48%;
+        text-align: center;
+        margin: 1%;
+        position: relative;
+
+        .searching-signal {
+            position: absolute;
+            top: 45%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+
+            div {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    video {
+        width: 100%;
+        height: 400px;
+        z-index: 999;
+    }
+
+    .videochat-videos {
+        display: flex;
+    }
+
+    .callicon {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+            transform: rotate(-120deg);
+        }
+    }
+}
+
+.line-connect {
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: -80px;
+    height: 270px;
+    z-index: 0;
+}
+
+.friend-videochat-video {
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    .videochatRoom {
+        video {
+            height: 200px;
+        }
+    }
+}

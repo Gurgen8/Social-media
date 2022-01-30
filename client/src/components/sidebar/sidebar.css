@@ -1,0 +1,417 @@
+.sidebar {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  opacity: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+}
+
+.sidebarWrapper {
+  padding: 20px;
+}
+
+.sidebarList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebarListItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebarListItem:hover {
+  cursor: pointer;
+}
+
+.sidebarIcon {
+  margin-right: 15px;
+}
+
+span {
+  margin-left: 10px;
+}
+
+.sidebarButton {
+  width: 150px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.sidebarButton:hover {
+  background-color: #318CE7;
+}
+
+.sidebarHr {
+  margin: 20px 0;
+}
+
+.sidebarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.react-datepicker-wrapper {
+  margin-left: 5px;
+}
+
+.datepicker_div {
+  position: relative;
+}
+
+.react-datepicker__header {
+  background-color: green !important;
+  color: white;
+}
+
+.datepicker_button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+}
+
+.post {
+  -webkit-box-shadow: 0px 1px 16px -8px white;
+          box-shadow: 0px 1px 16px -8px white;
+}
+
+.open-enter {
+  opacity: 0;
+  -webkit-transition: opacity 400ms, -webkit-transform 400ms;
+  transition: opacity 400ms, -webkit-transform 400ms;
+  transition: opacity 400ms, transform 400ms;
+  transition: opacity 400ms, transform 400ms, -webkit-transform 400ms;
+  -webkit-transform: scaleY(-1.9);
+          transform: scaleY(-1.9);
+}
+
+.open-enter-active {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.open-exit {
+  opacity: 0.8;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+.open-exit-active {
+  opacity: 0;
+  -webkit-transform: scaleY(-0.9);
+          transform: scaleY(-0.9);
+  -webkit-transition: opacity 600ms, -webkit-transform 300ms;
+  transition: opacity 600ms, -webkit-transform 300ms;
+  transition: opacity 600ms, transform 300ms;
+  transition: opacity 600ms, transform 300ms, -webkit-transform 300ms;
+}
+
+.sidebarFriend {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 4px;
+}
+
+.sidebarFriend:hover {
+  border-bottom: 1px solid blue;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.react-datepicker-wrapper input {
+  border: none !important;
+  border-bottom: 2px solid black !important;
+  outline: none;
+}
+
+.datepicker_div button {
+  background: transparent !important;
+  border: none !important;
+}
+
+.sidebarListItem {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.sidebarListItem:hover {
+  border-right: 2px solid black;
+  background: blanchedalmond;
+}
+
+.sidebarListItem .sidebarListItemText {
+  color: black !important;
+}
+
+.sidebarListItem i {
+  color: #333399;
+}
+
+.course-enter {
+  opacity: 0;
+  -webkit-transition: opacity 400ms, -webkit-transform 400ms;
+  transition: opacity 400ms, -webkit-transform 400ms;
+  transition: opacity 400ms, transform 400ms;
+  transition: opacity 400ms, transform 400ms, -webkit-transform 400ms;
+  -webkit-transform: scaleY(-1.9);
+          transform: scaleY(-1.9);
+}
+
+.course-enter-active {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.course-exit {
+  opacity: 0.8;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+.course-exit-active {
+  opacity: 0;
+  -webkit-transform: scaleY(-0.9);
+          transform: scaleY(-0.9);
+  -webkit-transition: opacity 600ms, -webkit-transform 300ms;
+  transition: opacity 600ms, -webkit-transform 300ms;
+  transition: opacity 600ms, transform 300ms;
+  transition: opacity 600ms, transform 300ms, -webkit-transform 300ms;
+}
+
+.course-li {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.course-li i {
+  color: cornflowerblue;
+}
+
+.course-li a {
+  color: brown;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.course-li a:hover {
+  color: blue;
+  -webkit-text-decoration: underline 2px blue !important;
+          text-decoration: underline 2px blue !important;
+}
+
+.setting-li {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: brown;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.setting-li:hover {
+  -webkit-text-decoration: underline 2px blue;
+          text-decoration: underline 2px blue;
+  color: blue;
+  cursor: pointer;
+}
+
+.setting-li i {
+  color: black;
+  font-size: 20px !important;
+}
+
+.fa-trophy {
+  color: gold !important;
+}
+
+.fa-cc-mastercard {
+  color: black !important;
+}
+
+.del-query b {
+  color: red;
+  margin-left: 20px;
+}
+
+.del-query span {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none !important;
+}
+
+.del-query span:hover {
+  color: red;
+}
+
+.course-li {
+  color: firebrick;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.course-li:hover {
+  -webkit-text-decoration: underline 2px blue;
+          text-decoration: underline 2px blue;
+}
+
+.flag-img {
+  width: 25px;
+  height: 25px;
+}
+
+.togle-button {
+  height: 30;
+  position: fixed;
+  top: 1%;
+  z-index: 999;
+  left: 0px;
+  display: none;
+  left: 0;
+  width: 25px;
+  border: none;
+  background: transparent;
+  color: white;
+}
+
+.sidebar-open {
+  overflow-y: scroll;
+}
+
+.frame {
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn-12 {
+  position: relative;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+  padding: 0;
+}
+
+.btn-12 span {
+  background: #00acee;
+  background: -webkit-gradient(linear, left bottom, left top, from(#00acee), to(#027efb));
+  background: linear-gradient(0deg, #00acee 0%, #027efb 100%);
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn-12 span:nth-child(1) {
+  -webkit-box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+          box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+
+.btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+  background-color: red;
+}
+
+.btn-12:hover span:nth-child(1) {
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.btn-12:hover span:nth-child(2) {
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+/*# sourceMappingURL=sidebar.css.map */

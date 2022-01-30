@@ -1,0 +1,211 @@
+/* Slider */
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+    transition: 0.4s;
+  }
+  20%,
+  80% {
+    transform: translate3d(10px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-20px, 0, 0);
+    background: black;
+  }
+  40%,
+  60% {
+    transform: translate3d(10px, 0, 0);
+    color: blue;
+  }
+}
+
+#avatar-stori {
+  margin: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.fa-slideshare {
+  color: gold;
+  font-size: 30px !important;
+  margin-left: 40px;
+  transition: all 0.2s;
+
+  &:hover {
+    color: hotpink;
+    cursor: pointer;
+    transform: scale(1.5);
+  }
+}
+
+.stori-title {
+  margin-left: 10px;
+  margin-top: 30px;
+  border-bottom: 2px solid #ccc;
+}
+
+.all-storis-section {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+  text-align: center;
+
+  .stori-feed {
+    border-bottom: 2px solid grey;
+    margin-top: 50px;
+  }
+
+  img {
+    width: 200px;
+  }
+}
+
+.storis-img {
+  width: 100px;
+  height: 150px;
+  transition: all 0.5s;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+
+  &:hover {
+    box-shadow: 10px 10px 5px black;
+    border: 4px double cornflowerblue;
+  }
+}
+
+.all-storis-span {
+  font-size: 20px;
+  background-color: gray;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: -10px;
+}
+
+.fa-tablet {
+  cursor: pointer;
+  &:hover {
+    color: brown;
+  }
+}
+.storis-root {
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  .fa-clock-o {
+    font-size: 16px !important;
+    margin-bottom: 15px;
+  }
+}
+
+.stori-feed {
+  position: relative;
+
+  .fa-eye {
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      color: aquamarine;
+    }
+  }
+
+  .remove-storis-btn {
+    position: absolute;
+    top: -1%;
+    left: 5%;
+    color: red;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+//aniumation
+
+.col-3 {
+  flex: 2 !important;
+  margin-bottom: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 49%;
+  &:hover {
+    background-color: sandybrown;
+    cursor: pointer;
+  }
+}
+
+.snippet {
+  margin-top: 15px !important;
+  cursor: pointer;
+}
+.dot-bricks {
+  position: relative;
+  top: 8px;
+  left: -9999px;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: red;
+  color: red;
+  box-shadow: 9991px -16px 0 0 red, 9991px 0 0 0 red, 10007px 0 0 0 red;
+  animation: dotBricks 2s infinite ease;
+}
+
+@keyframes dotBricks {
+  0% {
+    box-shadow: 9991px -16px 0 0 red, 9991px 0 0 0 green, 10007px 0 0 0 gold;
+  }
+  8.333% {
+    box-shadow: 10007px -16px 0 0 red, 9991px 0 0 0 green, 10007px 0 0 0 gold;
+  }
+  16.667% {
+    box-shadow: 10007px -16px 0 0 red, 9991px -16px 0 0 green 10007px 0 0 0 gold;
+  }
+  25% {
+    box-shadow: 10007px -16px 0 0 red, 9991px -16px 0 0 green, 9991px 0 0 0 gold;
+  }
+  33.333% {
+    box-shadow: 10007px 0 0 0 red, 9991px -16px 0 0 green, 9991px 0 0 0 gold;
+  }
+  41.667% {
+    box-shadow: 10007px 0 0 0 red, 10007px -16px 0 0 green, 9991px 0 0 0 gold;
+  }
+  50% {
+    box-shadow: 10007px 0 0 0 red, 10007px -16px 0 0 green, 9991px -16px 0 0 gold;
+  }
+  58.333% {
+    box-shadow: 9991px 0 0 0 red, 10007px -16px 0 0 green, 9991px -16px 0 0 gold;
+  }
+  66.666% {
+    box-shadow: 9991px 0 0 0 red, 10007px 0 0 0 green, 9991px -16px 0 0 gold;
+  }
+  75% {
+    box-shadow: 9991px 0 0 0 red, 10007px 0 0 0 green, 10007px -16px 0 0 gold;
+  }
+  83.333% {
+    box-shadow: 9991px -16px 0 0 red, 10007px 0 0 0 green, 10007px -16px 0 0 gold;
+  }
+  91.667% {
+    box-shadow: 9991px -16px 0 0 red, 9991px 0 0 0 green, 10007px -16px 0 0 gold;
+  }
+  100% {
+    box-shadow: 9991px -16px 0 0 red 9991px 0 0 0 green, 10007px 0 0 0 gold;
+  }
+}
+
+.time-storis{
+
+  font-size: 12px;
+}

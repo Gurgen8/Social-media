@@ -1,0 +1,310 @@
+.weather-div {
+  background-image: url("../../assets/img/temp.jpg");
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+}
+
+.weather-div i {
+  font-size: 20px !important;
+  color: gold;
+}
+
+.weather-div .weather-icon {
+  width: 70px;
+}
+
+.weather-div .main-container {
+  position: relative;
+  width: 300px;
+}
+
+.weather-div .main-container .fa-times {
+  position: absolute;
+  top: 7%;
+  right: 10%;
+  color: red;
+}
+
+.weather-div .weather-box {
+  background: black;
+  color: white;
+  width: 300px;
+  height: 350px;
+  font-size: 20px;
+  -webkit-box-shadow: 2px 4px 3px gold;
+          box-shadow: 2px 4px 3px gold;
+  text-align: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0.87;
+  position: absolute;
+  right: 0;
+}
+
+.weather-div .weather-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weather-div .weather-item span {
+  color: white;
+}
+
+.weather-div .weather-box:hover {
+  color: gold;
+  -webkit-box-shadow: 0px 10px 20px gold;
+          box-shadow: 0px 10px 20px gold;
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+  opacity: 1;
+}
+
+.weather-div .weather-box:hover span {
+  color: gold;
+}
+
+.weather-div .sunrice, .weather-div .sunset {
+  width: 50px;
+}
+
+.weather-div .wind {
+  width: 40px;
+}
+
+.weather-div .time {
+  color: green;
+}
+
+.weather-div ul {
+  width: 300px;
+  height: 200px;
+  background-color: black;
+  font-size: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ccc;
+  opacity: 0.68;
+  -webkit-box-shadow: 2px 1px 20px gold;
+          box-shadow: 2px 1px 20px gold;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.weather-div ul:hover {
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border: 4px solid gold;
+  color: gold;
+  font-size: 38px;
+}
+
+.weather-div li {
+  list-style-type: none;
+}
+
+.main-container {
+  background-size: cover;
+  background-position: center;
+}
+
+.main-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search {
+  outline: none;
+  padding: 20px 7%;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 5%;
+  background: rgba(250, 250, 250, 0.85);
+}
+
+.city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 8%;
+  border-radius: 20px;
+  background: rgba(250, 250, 250, 0.85);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
+          box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
+}
+
+p {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.city-temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1e2432;
+  text-align: center;
+}
+
+.city sup {
+  font-size: 0.5em;
+}
+
+.city-name {
+  font-size: 2em;
+}
+
+.city-name sup {
+  padding: 0.2em 0.6em;
+  margin-left: 0.2em;
+  border-radius: 30px;
+  color: #fff;
+  background: #ff8c00;
+}
+
+.city-icon {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .search {
+    padding: 20px 15%;
+  }
+  .city {
+    padding: 40px 20%;
+  }
+}
+
+.main-container {
+  background: black;
+  color: white;
+  width: 350px;
+  font-size: 20px;
+  -webkit-box-shadow: 2px 4px 3px gold;
+          box-shadow: 2px 4px 3px gold;
+  text-align: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  position: absolute;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-top: 20px;
+}
+
+.main-container .city {
+  margin-top: 10px !important;
+  height: 350px;
+  width: 80%;
+}
+
+.main-container .search {
+  width: 90%;
+  height: 50px !important;
+}
+
+.go-back {
+  width: 100px;
+  height: 40px;
+  background: black;
+  color: gold;
+  border: 2px solid gold;
+  position: fixed;
+  bottom: 10%;
+  left: 1%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.go-back:hover {
+  background: gold;
+  color: black;
+  border: 2px solid black;
+}
+
+.go-back:hover i {
+  color: black !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .weather-box {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .weather-div .go-back {
+    left: 70%;
+    bottom: 1%;
+  }
+  .main-container {
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=weather.css.map */

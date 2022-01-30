@@ -1,0 +1,295 @@
+.share {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+
+.shareWrapper {
+  padding: 10px;
+}
+
+.shareTop {
+  display: flex;
+  align-items: center;
+}
+
+#shareCancel {
+  top: 0 !important;
+}
+
+.shareProfileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.shareInput {
+  border: none;
+  width: 100%;
+  resize: none;
+  margin-left: 15px;
+  font-size: 15px;
+  padding-top: 20px;
+  text-transform: capitalize;
+}
+
+.shareInput:focus {
+  outline: none;
+}
+
+.shareHr {
+  margin: 20px;
+}
+
+.shareBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shareOptions {
+  display: flex;
+  margin-left: 20px;
+  position: relative !important;
+
+  .emoji-picker-react {
+    top: 100% !important;
+    position: absolute !important;
+    z-index: 1;
+  }
+}
+
+.shareOption {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.shareIcon {
+  font-size: 18px;
+  margin-right: 3px;
+}
+.fa-photo {
+  color: tomato !important;
+}
+.fa-tags {
+  color: blue;
+}
+.fa-map-marker {
+  color: green;
+}
+i {
+  font-size: 25px !important;
+}
+
+.shareOptionText {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.fa-question-circle {
+  color: gold;
+}
+
+////@at-root
+
+.shareImgContainer {
+  padding: 0 20px 10px 20px;
+  position: relative;
+}
+
+.shareImg {
+  width: 100%;
+  object-fit: cover;
+  height: 475px;
+}
+
+.shareCancelImg {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+  &:hover {
+    color: red;
+  }
+}
+
+.emoji-picker-react {
+  position: absolute !important;
+  top: 270px !important;
+  z-index: 999;
+}
+
+.fa-smile-o {
+  color: #9457eb;
+}
+
+.shareCancelbtn {
+  position: absolute;
+  top: 50px;
+  z-index: 999;
+  left: 0;
+  transition: all 0.6s;
+  &:hover {
+    background: red;
+    color: grey;
+  }
+}
+.shareCancelImg {
+  transition: all 0.6s;
+  &:hover {
+    color: grey;
+    background: red;
+  }
+}
+
+.corrd_section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+
+  .fa-map-marker {
+    font-size: 50px !important;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    transition: all 0.5s;
+    &:hover {
+      color: red;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.position {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  b {
+    color: tomato !important;
+  }
+  i {
+    color: tomato;
+  }
+}
+
+.shareImg {
+  object-fit: cover;
+  object-position: 100% 10%;
+}
+
+.audio-share {
+  position: relative;
+
+  .shareCancelImg {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .share {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emoji-picker-react {
+    position: absolute !important;
+    top: 270px !important;
+    left: 30%;
+    z-index: 999;
+  }
+  .shareWrapper {
+    padding: 5px;
+  }
+
+  .shareOptionText {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .shareWrapper {
+    .shareCancelImg {
+      top: 0% !important;
+      position: absolute;
+    }
+  }
+}
+
+.a {
+  color: #e7484f;
+}
+.b {
+  color: #f68b1d;
+}
+.c {
+  color: #fced00;
+}
+.d {
+  color: #009e4f;
+}
+.e {
+  color: #00aac3;
+}
+.f {
+  color: #732982;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.rainbow {
+  background-color: #343a40;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: green;
+  font-weight: 500;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+  transition: all 0, 4s;
+  width: 100px;
+}
+
+.rainbow-5 {
+  &:hover {
+    background-image: linear-gradient(
+      to right,
+      #e7484f,
+      #e7484f 16.65%,
+      #f68b1d 16.65%,
+      #f68b1d 33.3%,
+      #fced00 33.3%,
+      #fced00 49.95%,
+      #009e4f 49.95%,
+      #009e4f 66.6%,
+      #00aac3 66.6%,
+      #00aac3 83.25%,
+      #732982 83.25%,
+      #732982 100%,
+      #e7484f 100%
+    );
+    animation: slidebg 2s linear infinite;
+  }
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}

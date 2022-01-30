@@ -1,0 +1,134 @@
+.message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.messageTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.messageImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+
+.fa-check {
+  font-size: 14px !important;
+  color: #ccc !important;
+}
+
+.messageText {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #1877f2;
+  color: white;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  max-width: 100%;
+  max-height: 350px;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.messageText button {
+  width: 60px;
+  height: 30px;
+  font-size: 14px;
+  background: #1877f2;
+  border: none;
+  border-radius: 20px;
+  color: aliceblue;
+}
+
+.messageText .messages-div img {
+  width: 100% !important;
+  margin-top: 5px;
+}
+
+.messageText i {
+  color: red !important;
+}
+
+.messageText i:hover {
+  color: black !important;
+}
+
+.messageBottom {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.message.own {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.message.own .messageText {
+  background-color: #f5f1f1;
+  color: black;
+}
+
+.delete-sms i {
+  font-size: 18px !important;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.delete-sms i:hover {
+  -webkit-transform: scale(1.8) !important;
+          transform: scale(1.8) !important;
+  color: red;
+  cursor: pointer;
+}
+
+.messages-div {
+  width: 200px;
+  height: 200px;
+}
+
+.messages-div img {
+  width: 100%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.modal-img {
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+
+.message-desc {
+  word-wrap: break-word;
+}
+
+.audio {
+  width: 100%;
+  height: 70px;
+  background: #ca9292;
+  padding: 7px;
+}
+
+.message-video {
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  .search_form .fa-search {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=message.css.map */

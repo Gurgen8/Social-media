@@ -1,0 +1,103 @@
+.videochatRoom {
+  background-color: violet;
+  height: 100vh;
+  text-align: center;
+}
+
+.videochatRoom .fa-video-camera {
+  font-size: 35px !important;
+}
+
+.videochatRoom .videochat-user {
+  text-transform: capitalize;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.videochatRoom i {
+  font-size: 30px !important;
+  width: 50px;
+  height: 50px;
+  z-index: 999;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.videochatRoom i:hover {
+  color: white;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.videochatRoom .videos-item {
+  width: 48%;
+  text-align: center;
+  margin: 1%;
+  position: relative;
+}
+
+.videochatRoom .videos-item .searching-signal {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.videochatRoom .videos-item .searching-signal div {
+  width: 20px;
+  height: 20px;
+}
+
+.videochatRoom video {
+  width: 100%;
+  height: 400px;
+  z-index: 999;
+}
+
+.videochatRoom .videochat-videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.videochatRoom .callicon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.videochatRoom .callicon:hover {
+  -webkit-transform: rotate(-120deg);
+          transform: rotate(-120deg);
+}
+
+.line-connect {
+  width: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  top: -80px;
+  height: 270px;
+  z-index: 0;
+}
+
+.friend-videochat-video {
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .videochatRoom video {
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=videochat.css.map */

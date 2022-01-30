@@ -1,0 +1,447 @@
+#root {
+    box-sizing: border-box;
+    height: 100vh;
+}
+.root {
+    background: #080808;
+    color: white;
+    height: 100%;
+
+    .svg {
+        .button {
+            span {
+                color: olivedrab;
+                &:hover {
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+
+    .svg {
+        .button {
+            rect {
+                stroke: olivedrab;
+            }
+        }
+    }
+
+    .shareCancelImg {
+        i {
+            background-color: #ccc !important;
+        }
+    }
+
+    .photo-ok {
+        background-color: gray;
+        height: 24px;
+    }
+    .Toastify__toast {
+        box-shadow: 5px 10px 5px #ccc;
+        height: 120px;
+        color: white;
+        background-color: #ccc !important;
+    }
+
+    .notifications-div {
+        background-color: #202020;
+        color: gray;
+
+        .clear-div {
+            background-color: black;
+        }
+
+        .notification-title {
+            background-color: black;
+        }
+    }
+
+    .chatonline-open {
+        background-color: black;
+    }
+
+    .chatMenuWrapper {
+        background-color: black;
+    }
+
+    .location-div {
+        .fa-times {
+            color: red !important;
+        }
+    }
+
+    .cahtOnline {
+        background-color: black;
+    }
+
+    .chatOnline-menu {
+        background-color: black;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgb(92, 91, 91);
+    }
+
+    .sidebar {
+        background: #202020;
+    }
+    #bottom {
+        background: black;
+        border: 1px solid gray;
+        transition: all 0.4s;
+        &:hover {
+            color: cornflowerblue;
+        }
+    }
+
+    .sidebarListItemText {
+        color: #ccc !important;
+    }
+    .sidebarFriendName {
+        color: gray;
+    }
+
+    .sidebarListItem {
+        i {
+            color: cornflowerblue !important;
+        }
+    }
+    .post {
+        background: #202020;
+    }
+
+    .scroll-div {
+        background: black;
+    }
+
+    .shareWrapper {
+        background: #202020;
+
+        .shareInput {
+            background: #202020;
+            color: whitesmoke;
+        }
+
+        .fa-window-close {
+            color: gray;
+            &:hover {
+                color: red;
+            }
+        }
+
+        .shareOptionText,
+        .postLikeCounter {
+            color: gray;
+        }
+    }
+
+    .postLikeCounter {
+        color: gray;
+    }
+    .postDate {
+        color: honeydew;
+    }
+
+    #comments_span {
+        color: gray !important;
+    }
+
+    .fa-user-secret {
+        color: #ccc !important;
+    }
+
+    .slick-slider {
+        background: #202020;
+        .text-slide {
+            span {
+                color: gray !important;
+            }
+        }
+    }
+
+    .likes-user-name {
+        color: gray;
+    }
+
+    .comment_form textarea {
+        background: whitesmoke;
+    }
+
+    .comment_div {
+        background: #202020;
+    }
+
+    .desc_comment {
+        span {
+            color: gray !important;
+        }
+    }
+
+    .time {
+        color: #ccc;
+    }
+
+    .emoji-picker-react {
+        background: grey;
+    }
+
+    .setting-li {
+        i {
+            color: honeydew;
+            margin-left: 5px;
+        }
+    }
+
+    .birthdayContainer {
+        background: #202020;
+    }
+
+    .chatOnline {
+        background: #202020;
+
+        .chatOnlineName {
+            color: grey;
+        }
+    }
+
+    .sidebarListItem {
+        transition: all 0.4s;
+        &:hover {
+            background: rgb(126, 125, 125);
+        }
+    }
+
+    #spam-length {
+        color: #ccc !important;
+    }
+
+    .spam-list {
+        background: #202020;
+    }
+
+    .span-name {
+        color: #ccc !important;
+        margin-left: 6px;
+    }
+
+    .rightbar {
+        background: #202020;
+        padding-left: 10px;
+        border-radius: 7px;
+    }
+
+    .user-followins-div {
+        .rightbarFollowButton {
+            color: aliceblue !important;
+        }
+    }
+
+    .rightbarFollowingName {
+        color: #ccc;
+        text-transform: capitalize;
+    }
+
+    .friends-list {
+        background: #202020;
+
+        .follow-span {
+            color: #ccc;
+            text-transform: capitalize;
+        }
+    }
+
+    .follow-div {
+        &:hover {
+            background: black;
+        }
+    }
+
+    .information-user {
+        background: #202020;
+    }
+
+    .rightbarInfoKey {
+        color: white !important;
+    }
+
+    .post-gallery {
+        background: #202020;
+    }
+
+    .postimg-div {
+        i {
+            color: black;
+        }
+    }
+
+    .chatMenu {
+        background: black !important;
+    }
+
+    .chatBox {
+        background: #202020;
+    }
+
+    .chatOnline {
+        background: black;
+    }
+
+    .conversation {
+        transition: all 0.3s;
+        height: 50px;
+        &:hover {
+            background: #202020;
+        }
+    }
+
+    .chatMessageInput {
+        background: black;
+        color: white;
+    }
+
+    .chatOnlineImg {
+        border: none;
+    }
+
+    .logo-page {
+        background: #202020 !important;
+    }
+
+    .comment_textarea {
+        background: black !important;
+        color: whitesmoke !important;
+    }
+
+    .empti-div {
+        height: 400px;
+        text-align: center;
+        padding-top: 175px;
+        font-size: 28px;
+        flex: 5.5 1;
+    }
+    .user-div {
+        background: #202020;
+
+        .user-name {
+            color: #ccc;
+            text-transform: capitalize;
+        }
+    }
+
+    .empty-div {
+        span {
+            margin: 0 auto;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 50% !important;
+        }
+    }
+
+    .rightbarInfoValue {
+        color: #ccc;
+        text-transform: capitalize;
+    }
+
+    .conv-title {
+        border-bottom: 2px solid #ccc;
+    }
+
+    .chat-online-title {
+        border-bottom: 2px solid #ccc;
+    }
+
+    .typing {
+        font-style: italic;
+        color: #ccc;
+    }
+    .rightbar-open {
+        background: #202020;
+    }
+
+    .sidebar-open {
+        background: #202020 !important;
+    }
+}
+
+.rightbar-togle {
+    width: 40px;
+    height: 30px;
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .rightbar {
+        position: absolute !important;
+        width: 0;
+        right: 0;
+        height: 0;
+    }
+
+    .rightbar-togle {
+        display: none;
+        display: flex;
+        position: fixed;
+        left: 6%;
+        top: 1%;
+        font-size: 10px !important;
+        // margin-top:50px;
+        z-index: 999;
+        color: #318ce7;
+        background: whitesmoke;
+        background: transparent;
+        border: none;
+
+        i {
+            font-size: 25px !important;
+            color: white;
+        }
+    }
+}
+
+.rightbar-open {
+    display: block !important;
+    position: absolute !important;
+    z-index: 2 !important;
+    transition: all 0.5s;
+    width: 340px;
+    padding: 10px;
+    transition: all 0.5s;
+    right: 0;
+    width: 320px;
+    height: 100vh;
+    position: fixed !important;
+    top: 0%;
+    padding-left: 20px;
+    background: white;
+    padding-top: 60px;
+}
+
+@media screen and (max-width: 992px) {
+    .sidebar {
+        position: absolute;
+        width: 0;
+        left: 0;
+    }
+    .togle-button {
+        display: block;
+    }
+}
+
+.sidebar-open {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    transition: all 0.5s;
+    background: #202020;
+    padding: 10px;
+    transition: all 0.3s;
+    left: 0;
+    width: 320px;
+    height: 100vh;
+    position: fixed;
+    top: 50px;
+    padding-left: 20px;
+    padding-top: 30px;
+    background: white;
+}

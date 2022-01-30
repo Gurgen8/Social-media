@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+.movie-div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #333399;
+}
+
+.movie-div .go-back-movies {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.movie-div .go-back-movies i {
+  color: #373b69 !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.movie-div .go-back-movies:hover {
+  background: blueviolet;
+}
+
+.movie-div .go-back-movies:hover i {
+  color: white !important;
+}
+
+.movie-div body {
+  background-color: #22254b;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.movie-div .root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.movie-div header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #373b69;
+  padding: 1rem;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.movie-div .search {
+  background-color: transparent;
+  border: 2px solid #22254b;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  color: white;
+}
+
+.movie-div .search:focus {
+  outline: none;
+}
+
+.movie-div .search::-webkit-input-placeholder {
+  color: white;
+}
+
+.movie-div .search:-ms-input-placeholder {
+  color: white;
+}
+
+.movie-div .search::-ms-input-placeholder {
+  color: white;
+}
+
+.movie-div .search::placeholder {
+  color: white;
+}
+
+.movie-div .movie-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 110px;
+}
+
+.movie-div .movie {
+  background-color: #373b69;
+  border-radius: 3px;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* Para a imagem nao criar uma borda pontuda na parte superior do box */
+  position: relative;
+  /* Relativo para ser referencia ao .movie-overview */
+  margin: 1rem;
+  width: 300px;
+}
+
+.movie-div .movie img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.movie-div .movie-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.movie-div .movie-info h3 {
+  margin: 0;
+}
+
+.movie-div .movie-overview {
+  background-color: #fff;
+  color: #22254b;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  -webkit-box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  max-height: 100%;
+  -webkit-transform: translateY(102%);
+          transform: translateY(102%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.movie-div .movie:hover .movie-overview {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.movie-div .tag {
+  background-color: #22254b;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.movie-div .tag.green {
+  color: #05b805;
+}
+
+.movie-div .tag.orange {
+  color: orange;
+}
+
+.movie-div .tag.red {
+  color: red;
+}
+/*# sourceMappingURL=movies.css.map */

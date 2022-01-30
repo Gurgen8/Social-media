@@ -1,0 +1,64 @@
+#avatar-stori {
+  margin: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.stori-author {
+  font-size: 24px;
+  color: whitesmoke;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.post {
+  overflow: hidden;
+}
+
+.home-storis-img {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.home-storis-img:hover {
+  border: 3px  dashed cornflowerblue;
+  -webkit-box-shadow: 4px 2px 10px black;
+          box-shadow: 4px 2px 10px black;
+}
+
+.stori-desc {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.storis-timeline {
+  height: 340px;
+}
+
+.storis-timeline img {
+  width: 100px !important;
+  height: 145px !important;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.storis-timeline .slick-arrow {
+  top: 0 !important;
+}
+
+.fa-eye {
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.fa-eye:hover {
+  color: aquamarine;
+}
+/*# sourceMappingURL=sliderStoris.css.map */

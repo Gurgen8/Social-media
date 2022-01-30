@@ -1,0 +1,312 @@
+.register {
+  width: 100vw;
+  background-color: #f0f2f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.register .fa-exclamation-circle {
+  font-size: 14px !important;
+}
+
+.register .fa-exclamation-triangle {
+  font-size: 14px !important;
+}
+
+.register .loginWrapper {
+  width: 70%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px;
+}
+
+.register .loginLeft {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.register .loginLogo {
+  font-size: 50px;
+  font-weight: 800;
+  color: #1775ee;
+  margin-bottom: 10px;
+}
+
+.register .loginDesc {
+  font-size: 24px;
+  margin: 0;
+}
+
+.register a {
+  text-align: center;
+}
+
+.register .loginBox {
+  height: auto;
+  padding: 20px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.register .loginInput {
+  border: none !important;
+  border-bottom: 4px solid #A7B3BB !important;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #318CE7;
+  height: 65px;
+  width: 100%;
+}
+
+.register .loginInput:focus {
+  outline: none;
+}
+
+.register .loginButton {
+  height: 50px;
+  border: none;
+  background-color: #1775ee;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.register .loginForgot {
+  text-align: center;
+  color: #1775ee;
+}
+
+.register .loginRegisterButton {
+  width: 60%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #42b72a;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.register .logo {
+  width: 300px;
+  height: 300px;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.register .logo:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  border-radius: 10%;
+  -webkit-box-shadow: 5px 10px 30px black !important;
+          box-shadow: 5px 10px 30px black !important;
+}
+
+.register .loginRight {
+  width: 50%;
+}
+
+@media screen and (max-width: 992px) {
+  .loginWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .login {
+    height: 1200px !important;
+    text-align: center;
+  }
+  .loginRight {
+    width: 100% !important;
+  }
+  input {
+    width: 100%;
+  }
+  .logo {
+    border-radius: 5%;
+  }
+  .loginLeft {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.register_div {
+  width: 100%;
+  position: relative;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.register_div .fa-dot-circle-o {
+  font-size: 14px !important;
+  top: -10%;
+  position: absolute;
+  margin-right: 10px;
+  left: 0;
+}
+
+.register_div .div-radio {
+  width: 100px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-right: 10%;
+}
+
+.register_div .inp-label {
+  position: absolute;
+  bottom: 80%;
+  left: 5%;
+  font-size: 13px;
+  -webkit-transition: all 0.5s !important;
+  transition: all 0.5s !important;
+  width: 100%;
+}
+
+.register_div .inp-line {
+  height: 4px;
+  position: absolute;
+  bottom: 25%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  left: 0;
+}
+
+.register_div i {
+  color: #318CE7;
+}
+
+.register_div i:hover {
+  color: tomato;
+  cursor: pointer;
+}
+
+.fa-camera-retro {
+  position: relative !important;
+}
+
+.allready-message, .error_message {
+  font-size: 10px;
+  width: 40%;
+  position: relative;
+  color: red;
+  border-bottom: 4px solid #A7B3BB;
+  margin-bottom: 20px;
+}
+
+.fa-exclamation-circle {
+  color: firebrick !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: -10% !important;
+  font-size: 13px;
+}
+
+.fa-exclamation-triangle {
+  position: relative !important;
+  color: #ffe300 !important;
+}
+
+.allready-message {
+  color: red;
+}
+
+.inp-line {
+  width: 0 !important;
+}
+
+.loginInput:focus ~ .inp-label {
+  -webkit-transform: translateX(50%) !important;
+          transform: translateX(50%) !important;
+  color: brown;
+}
+
+.loginInput:focus ~ .inp-line {
+  width: 100% !important;
+  background: #318CE7 !important;
+}
+
+@media screen and (max-width: 364px) {
+  .loginWrapper {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .allready-message {
+    width: 40% !important;
+  }
+  .inp-label {
+    left: -30% !important;
+    top: -20% !important;
+  }
+  .fa-exclamation-circle {
+    right: -10% !important;
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .allready-message, .error_message {
+    font-size: 9px;
+  }
+  .inp-label {
+    left: -35% !important;
+  }
+  .loginWrapper {
+    width: 80% !important;
+  }
+  .loginWrapper .fa-exclamation-circle {
+    bottom: 40% !important;
+    right: -10%;
+  }
+  .register_div .fa-dot-circle-o {
+    font-size: 10px !important;
+    top: -22%;
+  }
+}
+/*# sourceMappingURL=register.css.map */

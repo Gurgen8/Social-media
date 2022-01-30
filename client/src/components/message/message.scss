@@ -1,0 +1,124 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.messageTop {
+    display: flex;
+}
+
+.messageImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.fa-check {
+    font-size: 14px !important;
+    color: #ccc !important;
+}
+
+.messageText {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #1877f2;
+    color: white;
+    transition: all 0.4s;
+    max-width: 100%;
+    max-height: 350px;
+    white-space: normal;
+    overflow: hidden;
+
+    button {
+        width: 60px;
+        height: 30px;
+        font-size: 14px;
+        background: #1877f2;
+        border: none;
+        border-radius: 20px;
+        color: aliceblue;
+    }
+
+    .messages-div {
+        img {
+            width: 100% !important;
+            margin-top: 5px;
+        }
+    }
+
+    i {
+        color: red !important;
+    }
+
+    i {
+        &:hover {
+            color: black !important;
+        }
+    }
+}
+
+.messageBottom {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.message.own {
+    align-items: flex-end;
+}
+
+.message.own .messageText {
+    background-color: rgb(245, 241, 241);
+    color: black;
+}
+
+.delete-sms {
+    i {
+        font-size: 18px !important;
+        transition: all 0.6s;
+        &:hover {
+            transform: scale(1.8) !important;
+            color: red;
+            cursor: pointer;
+        }
+    }
+}
+
+.messages-div {
+    width: 200px;
+    height: 200px;
+
+    img {
+        width: 100%;
+        cursor: zoom-in;
+    }
+}
+.modal-img {
+    cursor: zoom-out;
+}
+
+.message-desc {
+    word-wrap: break-word;
+}
+
+.audio {
+    width: 100%;
+    height: 70px;
+    background: rgb(202, 146, 146);
+    padding: 7px;
+}
+
+.message-video {
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (max-width: 767px) {
+    .search_form {
+        .fa-search {
+            display: none !important;
+        }
+    }
+}

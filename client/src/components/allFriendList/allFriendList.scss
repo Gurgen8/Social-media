@@ -1,0 +1,54 @@
+.friends-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 5;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 10px 0 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 10px 0 10px;
+    box-shadow: 0px 0px 16px black;
+    height: 100vh;
+    overflow-y: scroll;
+
+    .fa-trash {
+        color: cornflowerblue;
+        margin-left: 20px;
+        transition: all 0.4s;
+
+        &:hover {
+            color: red;
+            transform: scale(1.5);
+        }
+    }
+
+    h3 {
+        color: darkslateblue;
+        text-decoration: underline;
+    }
+
+    .followins-section,
+    .followers-section {
+        width: 50%;
+    }
+
+    .follow-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+    }
+
+    .follow-div {
+        margin: 30px 0 30px 0 !important;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            background: whitesmoke;
+            border-bottom: 1px solid green;
+        }
+    }
+}

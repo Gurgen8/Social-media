@@ -1,0 +1,18 @@
+.map {
+  width: 100px !important;
+  height: 100px;
+}
+
+li {
+  list-style: none;
+}
+
+.ul_map div:nth-child(1) {
+  width: 100%;
+  z-index: 1;
+  height: 500px;
+  top: 10%;
+  position: absolute;
+  left: 0;
+}
+/*# sourceMappingURL=map.css.map */

@@ -1,0 +1,262 @@
+.AppWrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #e97ae9;
+  position: relative;
+}
+
+.AppWrapper input,
+.AppWrapper button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-style: none;
+}
+
+.AppWrapper .go-back {
+  color: cornflowerblue;
+  border: 2px dotted cornflowerblue;
+}
+
+.AppWrapper .go-back:hover {
+  background: cornflowerblue;
+  color: black;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3D(0.95, 0.95, 0.95);
+            transform: scale3D(0.95, 0.95, 0.95);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3D(0.95, 0.95, 0.95);
+            transform: scale3D(0.95, 0.95, 0.95);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  }
+}
+
+.AppWrapper .Form {
+  -webkit-animation: fade 200ms ease-out;
+          animation: fade 200ms ease-out;
+  text-align: center;
+  width: 360px;
+  position: absolute;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  top: 20%;
+}
+
+.AppWrapper .FormGroup {
+  margin: 0 15px 20px;
+  padding: 0;
+  border-style: none;
+  background-color: #7795f8;
+  will-change: opacity, transform;
+  -webkit-box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #829fff;
+          box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #829fff;
+  border-radius: 4px;
+}
+
+.AppWrapper .FormRow {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-left: 15px;
+  border-top: 1px solid #819efc;
+}
+
+.AppWrapper .FormRow:first-child {
+  border-top: none;
+}
+
+.AppWrapper .FormRowLabel {
+  width: 15%;
+  min-width: 70px;
+  padding: 11px 0;
+  color: #c4f0ff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@-webkit-keyframes void-animation-out {
+  0%,
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes void-animation-out {
+  0%,
+  to {
+    opacity: 1;
+  }
+}
+
+.AppWrapper .FormRowInput:-webkit-autofill {
+  -webkit-text-fill-color: #fce883;
+  /* Hack to hide the default webkit autofill */
+  -webkit-transition: background-color 100000000s;
+  transition: background-color 100000000s;
+  -webkit-animation: 1ms void-animation-out;
+          animation: 1ms void-animation-out;
+}
+
+.AppWrapper .FormRowInput {
+  font-size: 16px;
+  width: 100%;
+  padding: 11px 15px 11px 0;
+  color: #fff;
+  background-color: transparent;
+  -webkit-animation: 1ms void-animation-out;
+          animation: 1ms void-animation-out;
+}
+
+.AppWrapper .FormRowInput::-webkit-input-placeholder {
+  color: #87bbfd;
+}
+
+.AppWrapper .FormRowInput:-ms-input-placeholder {
+  color: #87bbfd;
+}
+
+.AppWrapper .FormRowInput::-ms-input-placeholder {
+  color: #87bbfd;
+}
+
+.AppWrapper .FormRowInput::placeholder {
+  color: #87bbfd;
+}
+
+.AppWrapper .StripeElement--webkit-autofill {
+  background: transparent !important;
+}
+
+.AppWrapper .StripeElement {
+  width: 100%;
+  padding: 11px 15px 11px 0;
+}
+
+.AppWrapper .SubmitButton {
+  display: block;
+  font-size: 16px;
+  width: calc(100% - 30px);
+  height: 40px;
+  margin: 40px 15px 0;
+  background-color: #f6a4eb;
+  -webkit-box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #ffb9f6;
+          box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #ffb9f6;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  will-change: transform, background-color, box-shadow;
+}
+
+.AppWrapper .SubmitButton:active {
+  background-color: #d782d9;
+  -webkit-box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #e298d8;
+          box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #e298d8;
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.AppWrapper .SubmitButton.SubmitButton--error {
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+}
+
+.AppWrapper .SubmitButton.SubmitButton--error:active {
+  -webkit-transform: scale(0.99) translateY(15px);
+          transform: scale(0.99) translateY(15px);
+}
+
+.AppWrapper .SubmitButton:disabled {
+  opacity: 0.5;
+  cursor: default;
+  background-color: #7795f8;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.AppWrapper .ErrorMessage {
+  color: #fff;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 15px;
+  font-size: 13px;
+  margin-top: 0px;
+  width: 100%;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  opacity: 0;
+  -webkit-animation: fade 150ms ease-out;
+          animation: fade 150ms ease-out;
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  will-change: opacity, transform;
+}
+
+.AppWrapper .ErrorMessage svg {
+  margin-right: 10px;
+}
+
+.AppWrapper .Result {
+  margin-top: 50px;
+  text-align: center;
+  -webkit-animation: fade 200ms ease-out;
+          animation: fade 200ms ease-out;
+}
+
+.AppWrapper .ResultTitle {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.AppWrapper .ResultMessage {
+  color: #9cdbff;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+.AppWrapper .ResetButton {
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+/*# sourceMappingURL=paymant.css.map */

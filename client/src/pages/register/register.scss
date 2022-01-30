@@ -1,0 +1,285 @@
+.register {
+  width: 100vw;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .fa-exclamation-circle {
+    font-size: 14px !important;
+  }
+
+  .fa-exclamation-triangle {
+    font-size: 14px !important;
+  }
+}
+.register {
+  .loginWrapper {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    padding: 25px;
+  }
+
+  .loginLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .loginLogo {
+    font-size: 50px;
+    font-weight: 800;
+    color: #1775ee;
+    margin-bottom: 10px;
+  }
+
+  .loginDesc {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  a {
+    text-align: center;
+  }
+
+  .loginBox {
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .loginInput {
+    border: none !important;
+    border-bottom: 4px solid #a7b3bb !important;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #318ce7;
+    height: 65px;
+    width: 100%;
+  }
+
+  .loginInput:focus {
+    outline: none;
+  }
+
+  .loginButton {
+    height: 50px;
+    border: none;
+    background-color: #1775ee;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .loginForgot {
+    text-align: center;
+    color: #1775ee;
+  }
+
+  .loginRegisterButton {
+    width: 60%;
+    align-self: center;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #42b72a;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .logo {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    transition: all 1s;
+
+    &:hover {
+      transform: rotate(360deg);
+      border-radius: 10%;
+      box-shadow: 5px 10px 30px black !important;
+    }
+  }
+
+  .loginRight {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .loginWrapper {
+    flex-direction: column;
+  }
+
+  .login {
+    height: 1200px !important;
+    text-align: center;
+  }
+
+  .loginRight {
+    width: 100% !important;
+  }
+  input {
+    width: 100%;
+  }
+
+  .logo {
+    border-radius: 5%;
+  }
+  .loginLeft {
+    align-items: center;
+  }
+}
+
+.register_div {
+  width: 100%;
+  position: relative;
+  transition: all 0.7s;
+  display: flex;
+  justify-content: space-evenly;
+
+  .fa-dot-circle-o {
+    font-size: 14px !important;
+    top: -10%;
+    position: absolute;
+    margin-right: 10px;
+    left: 0;
+  }
+
+  .div-radio {
+    width: 100px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-right: 10%;
+  }
+
+  .inp-label {
+    position: absolute;
+    bottom: 80%;
+    left: 5%;
+    font-size: 13px;
+    transition: all 0.5s !important;
+    width: 100%;
+  }
+
+  .inp-line {
+    height: 4px;
+    position: absolute;
+    bottom: 25%;
+    transition: all 1s;
+    left: 0;
+  }
+
+  i {
+    color: #318ce7;
+
+    &:hover {
+      color: tomato;
+      cursor: pointer;
+    }
+  }
+}
+
+.fa-camera-retro {
+  position: relative !important;
+}
+
+.allready-message,
+.error_message {
+  font-size: 10px;
+  width: 40%;
+  position: relative;
+  color: red;
+  border-bottom: 4px solid #a7b3bb;
+  margin-bottom: 20px;
+}
+
+.fa-exclamation-circle {
+  color: firebrick !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: -10% !important;
+  font-size: 13px;
+}
+
+.fa-exclamation-triangle {
+  position: relative !important;
+  color: rgb(255, 227, 0) !important;
+}
+
+.allready-message {
+  color: red;
+}
+
+.inp-line {
+  width: 0 !important;
+}
+
+.loginInput {
+  &:focus ~ .inp-label {
+    transform: translateX(50%) !important;
+    color: brown;
+  }
+  &:focus ~ .inp-line {
+    width: 100% !important ;
+    background: #318ce7 !important;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .loginWrapper {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .allready-message {
+    width: 40% !important;
+  }
+
+  .inp-label {
+    left: -30% !important;
+    top: -20% !important;
+  }
+
+  .fa-exclamation-circle {
+    right: -10% !important;
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .allready-message,
+  .error_message {
+    font-size: 9px;
+  }
+
+  .inp-label {
+    left: -35% !important;
+  }
+
+  .loginWrapper {
+    width: 80% !important;
+
+    .fa-exclamation-circle {
+      bottom: 40% !important;
+      right: -10%;
+    }
+  }
+
+  .register_div {
+    .fa-dot-circle-o {
+      font-size: 10px !important;
+      top: -22%;
+    }
+  }
+}

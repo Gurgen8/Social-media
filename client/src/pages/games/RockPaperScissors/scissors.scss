@@ -1,0 +1,209 @@
+.game-zone {
+  color: gold;
+  background: black;
+  height: 100vh;
+  min-height: 500px;
+  .go-back {
+    left: 87%;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 40px;
+    box-shadow: 10px 10px 8px gray;
+    margin-top: 10px;
+    color: honeydew;
+  }
+
+  .player-section {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .winner {
+    order: 2;
+  }
+
+  .cpu-section {
+    order: 3;
+  }
+
+  .buttons-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+
+  .buttons-section button {
+    width: 90px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: black;
+    color: gold;
+    font-size: 20px;
+    transition: all 0.8s;
+    box-shadow: 2px 2px 5px #ccc;
+  }
+
+  .buttons-section button:hover {
+    border: 3px solid gold;
+  }
+
+  .winner {
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  .start {
+    margin-top: 200px;
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: black;
+    font-size: 23px;
+    font-weight: 700;
+    font-variant: small-caps;
+    border: 2px solid gold;
+    color: gold;
+  }
+
+  .start:hover {
+    background-color: GOLD;
+    color: black;
+  }
+
+  h2:nth-child(1) {
+    border-bottom: 1px dashed #ccc;
+    color: red;
+  }
+
+  h2:nth-child(2) {
+    color: green;
+  }
+
+  /* cpu leave */
+
+  .cpu-enter {
+  }
+
+  .cpu-enter-active {
+    opacity: 1;
+    transition: all 2s;
+    font-style: italic;
+  }
+
+  .cpu-leave {
+    transform: translate(550px, 70px);
+    transform-origin: left;
+    transition: all 600ms;
+    color: green;
+    font-size: 10px;
+  }
+
+  .cpu-leave-active {
+    opacity: 0.2;
+  }
+
+  /* user -leave */
+  .user-leave {
+    transform: translate(-450px, 70px);
+    transform-origin: right;
+    transition: all 650ms;
+    color: green;
+    font-size: 10px;
+  }
+
+  .user-leave-active {
+    opacity: 0.2;
+  }
+
+  .user-enter-active {
+    opacity: 1;
+    font-style: italic;
+  }
+
+  .user-enter {
+    transition: all 1s;
+  }
+
+  /* draw -leave */
+  .draw-leave {
+    transform: scale3d(1.4, 0.5, 1.9);
+    transition: all 0.8s;
+  }
+
+  span {
+    position: absolute;
+    top: 100px;
+  }
+
+  img[alt="winner"] {
+    border-bottom: 8px solid gold;
+  }
+
+  .line {
+    background-color: white;
+    height: 4px;
+    width: 150px;
+    order: 1;
+  }
+
+  .inline {
+    position: absolute;
+    width: 0;
+    transition: all 2.1s;
+    height: 7px;
+  }
+
+  audio {
+    position: fixed !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    background-color: black;
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .game-zone {
+    img {
+      width: 100px !important;
+      height: 100px !important;
+    }
+
+    .buttons-section {
+      flex-direction: column-reverse;
+      margin-left: 5px;
+      button {
+        margin-top: 10px;
+        height: 30px;
+        font-size: 15px;
+      }
+    }
+
+    .go-back {
+      left: 68%;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-left: 5px;
+    }
+
+    .audio {
+      display: none;
+    }
+  }
+}

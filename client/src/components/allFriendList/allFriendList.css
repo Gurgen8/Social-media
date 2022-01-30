@@ -1,0 +1,64 @@
+.friends-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 10px 0 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 10px 0 10px;
+  -webkit-box-shadow: 0px 0px 16px black;
+          box-shadow: 0px 0px 16px black;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.friends-list .fa-trash {
+  color: cornflowerblue;
+  margin-left: 20px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.friends-list .fa-trash:hover {
+  color: red;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.friends-list h3 {
+  color: darkslateblue;
+  text-decoration: underline;
+}
+
+.friends-list .followins-section, .friends-list .followers-section {
+  width: 50%;
+}
+
+.friends-list .follow-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.friends-list .follow-div {
+  margin: 30px 0 30px 0 !important;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.friends-list .follow-div:hover {
+  background: whitesmoke;
+  border-bottom: 1px solid green;
+}
+/*# sourceMappingURL=allFriendList.css.map */

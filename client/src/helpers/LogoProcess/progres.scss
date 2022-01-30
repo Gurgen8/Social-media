@@ -1,0 +1,23 @@
+.logo-page {
+	background-color: #318be7 !important;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 100vh;
+	border-radius: 1px;
+
+	img {
+		width: 20%;
+		position: absolute;
+		border-radius: 10%;
+		transition: all 4s !important;
+	}
+
+	&:hover {
+		img {
+			transform: scale(1.3) !important;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.homeContainer {
+    display: flex;
+    width: 100%;
+}
+
+#bottom {
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    cursor: pointer;
+    z-index: 999;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: black;
+    color: #50c878;
+    &:hover {
+        opacity: 0.9;
+    }
+}
+.scroll-div {
+    flex: 5.5 1 !important;
+}

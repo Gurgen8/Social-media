@@ -1,0 +1,682 @@
+.messenger {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.messenger .clear-all-messages {
+  width: 100%;
+  height: 50px;
+  background-color: firebrick !important;
+  font-size: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  text-align: center;
+}
+
+.messenger .callicon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.messenger .go-back {
+  background: cornflowerblue !important;
+  color: white;
+  border: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: cornflowerblue !important;
+}
+
+.fa-gift {
+  color: firebrick;
+}
+
+.gift-section {
+  width: 300px;
+  height: 300px;
+  background-color: gainsboro;
+  position: absolute;
+  top: -400px;
+  overflow-y: scroll;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  -webkit-box-shadow: -5px -4px 10px firebrick;
+          box-shadow: -5px -4px 10px firebrick;
+  overflow-x: hidden;
+}
+
+.gift-section button {
+  position: fixed;
+  height: 50px;
+}
+
+.gift-section .gift-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 45px;
+}
+
+.gift-section img {
+  width: 95px;
+  height: 90px;
+  cursor: pointer;
+}
+
+.gift-section input {
+  width: 285px;
+  height: 50px;
+  padding: 15px;
+  border: 3px solid firebrick;
+  position: fixed;
+  padding-left: 40px;
+}
+
+.chatMenu {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background: whitesmoke !important;
+  padding-top: 50px;
+}
+
+.chatMenuInput {
+  width: 90%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid gray;
+  resize: none;
+  outline: none;
+}
+
+.chatBox {
+  -webkit-box-flex: 5.5;
+      -ms-flex: 5.5;
+          flex: 5.5;
+}
+
+.chatBoxWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.chatBoxTop {
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 10px;
+  padding-top: 30px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.chatBoxBottom {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.chatBoxBottom i {
+  cursor: pointer !important;
+}
+
+.chatBoxBottom .emoji-picker-react {
+  position: absolute !important;
+  top: -1550% !important;
+}
+
+.chatMessageInput {
+  width: 80%;
+  height: 130px !important;
+  padding: 10px;
+  outline: none;
+  resize: none;
+}
+
+.chatSubmitButton {
+  width: 70px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+}
+
+.chatOnline {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background: whitesmoke;
+}
+
+.chatMenuWrapper,
+.chatBoxWrapper,
+.chatOnlineWrapper {
+  padding: 10px;
+  height: 100%;
+}
+
+.chatMenuWrapper {
+  overflow-y: scroll;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.noConversationText {
+  position: absolute;
+  top: 10%;
+  font-size: 50px;
+  color: #e0dcdc;
+  cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+  .chatMenu {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background: whitesmoke !important;
+  }
+  .chatMenuInput {
+    display: none;
+  }
+  .chatBox {
+    -webkit-box-flex: 10;
+        -ms-flex: 10;
+            flex: 10;
+  }
+  .chatOnline {
+    -webkit-box-flex: 1px;
+        -ms-flex: 1px;
+            flex: 1px;
+  }
+}
+
+.location-div {
+  position: absolute;
+  top: -28%;
+  border-bottom: 4px solid red;
+  left: 60%;
+}
+
+.location-div i {
+  color: red !important;
+  font-size: 30px !important;
+  cursor: auto !important;
+  margin-left: 10px;
+}
+
+.location-div .fa-times {
+  font-size: 15px !important;
+  position: absolute;
+  left: 50%;
+  color: black !important;
+  top: -20%;
+  cursor: pointer !important;
+}
+
+.file-send {
+  position: absolute;
+  bottom: -30%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.file-send form {
+  margin-left: 20px;
+}
+
+.messenger .shareImgContainer {
+  width: 250px !important;
+  height: 500px;
+  position: relative !important;
+  padding: 0 !important;
+}
+
+.messenger .shareImgContainer button {
+  right: 0;
+}
+
+.messenger .shareImgContainer img {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+}
+
+.messageText {
+  border: thin solid #ccc;
+  line-height: 1.7;
+  font-family: 'Inter', sans-serif;
+  max-width: 70ch;
+  white-space: normal;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.send-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.send-form button {
+  margin-right: 20px;
+}
+
+.photo-ok {
+  position: absolute;
+  left: 0 !important;
+  top: -20% !important;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.messenger .shareCancelImg {
+  color: black;
+  background: transparent !important;
+  top: 91.5%;
+  border: none !important;
+  position: absolute;
+  right: -1.5% !important;
+}
+
+.messenger .shareCancelImg:hover {
+  color: red !important;
+}
+
+.shareVideoContainer {
+  position: relative;
+  margin-bottom: -15px;
+}
+
+.shareVideoContainer video {
+  width: 300px;
+  height: 300px;
+}
+
+.shareVideoContainer button {
+  background: transparent;
+  border: none;
+}
+
+.shareVideoContainer button i {
+  color: red;
+  position: absolute;
+  top: 10%;
+}
+
+.fa-paper-plane-o {
+  font-size: 18px !important;
+  margin-bottom: -10px;
+}
+
+.videorecord {
+  width: 100%;
+  height: 100%;
+}
+
+.videorecord p {
+  color: red;
+}
+
+.videorecord .start {
+  background: seagreen;
+}
+
+.videorecord .stop {
+  background: red;
+}
+
+.videorecord .close {
+  background: cornflowerblue;
+}
+
+.videorecord video {
+  width: 100%;
+  height: 80%;
+}
+
+.shareImgContainer audio {
+  position: absolute !important;
+  bottom: 0 !important;
+  padding: 0;
+  margin: 0;
+}
+
+.shareImgContainer i {
+  font-size: 24px !important;
+}
+
+.shareImgContainer .shareCancemuzik {
+  position: absolute !important;
+  right: -20% !important;
+  background-color: transparent !important;
+  border: none;
+  bottom: -2%;
+}
+
+.shareImgContainer .shareCancemuzik :hover {
+  color: red;
+}
+
+.fa-check-square {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.fa-check-square:hover {
+  color: green !important;
+}
+
+.shareCancelImg {
+  color: black !important;
+}
+
+.shareCancelImg:hover {
+  color: red !important;
+}
+
+.shareVideo {
+  width: 100% !important;
+  height: 270px;
+  margin-bottom: 17px;
+}
+
+.giphy {
+  width: 30px;
+  height: 30px;
+}
+
+.friend-div {
+  cursor: pointer;
+}
+
+.friend-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.conv-title {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+
+.videorecord-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.videorecord-button button {
+  width: 120px;
+  height: 40px;
+  margin: 0in;
+  border: 1px solid black !important;
+}
+
+.chatMenuWrapper {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.convert-button {
+  display: none;
+}
+
+.chatOnline-menu {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .chatMenuWrapper {
+    width: 0;
+    position: absolute;
+    left: -60%;
+  }
+  .messenger .go-back {
+    position: absolute;
+    left: 87% !important;
+  }
+  .chatMenuWrapper {
+    padding: 0;
+  }
+  .convert-button {
+    display: block;
+    position: fixed;
+    top: 1.5%;
+    z-index: 9999;
+    border: none;
+    background-color: transparent;
+    color: white;
+    left: 2%;
+  }
+}
+
+.back {
+  position: fixed;
+  left: -1%;
+  top: -0.4%;
+  height: 10px;
+  z-index: 999;
+  color: whitesmoke;
+  display: none;
+}
+
+.back i {
+  font-size: 14px !important;
+}
+
+.open-onlines {
+  height: 30px;
+  position: fixed;
+  left: 12%;
+  z-index: 999;
+  border: none;
+  background-color: transparent;
+  color: whitesmoke;
+  top: 1.5%;
+  margin-right: 20px;
+  display: none;
+}
+
+.cahtMenu-open {
+  width: 300px;
+  position: fixed;
+  left: 0;
+  z-index: 2;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+}
+
+.chatOnline-menu {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin-top: 20px;
+}
+
+.topbar-none {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+.noConversationText {
+  font-size: 35px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .shareCancelImg {
+    top: 98% !important;
+  }
+  .messenger .shareImgContainer {
+    height: 350px;
+    margin-bottom: 15px;
+  }
+  .chatMenu {
+    -webkit-box-shadow: 7px 5px 5px cornflowerblue;
+            box-shadow: 7px 5px 5px cornflowerblue;
+  }
+  .chatonline-open {
+    -webkit-box-shadow: -0px 5px 5px cornflowerblue;
+            box-shadow: -0px 5px 5px cornflowerblue;
+  }
+  .word-length {
+    bottom: 87% !important;
+  }
+  .topbar-none {
+    display: none;
+  }
+  .messenger .go-back {
+    display: none;
+  }
+  .chatOnline-menu {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+  .open-onlines {
+    display: block;
+  }
+  .chatOnlineWrapper {
+    padding: 0;
+    position: absolute;
+  }
+  .noConversationText {
+    margin-top: 100px;
+  }
+  .back {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .gift-section {
+    left: 50%;
+    top: -445px;
+  }
+  .gift-section .fa-search {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .shareVideoContainer video {
+    width: 200px;
+    height: 250px;
+  }
+  .messenger .callicon {
+    right: 100px;
+    position: absolute;
+    bottom: 3%;
+  }
+  .messenger .shareCancelImg {
+    top: 85% !important;
+  }
+  .messenger .shareImgContainer {
+    height: 250px !important;
+  }
+  .chatBoxBottom {
+    display: block;
+  }
+  .chatBoxBottom textarea {
+    width: 100%;
+  }
+  .chatBoxBottom .word-length {
+    bottom: 92% !important;
+    left: 0;
+  }
+  .send-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 0;
+  }
+  .file-send {
+    bottom: -30px;
+    left: -50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .file-send .emoji-picker-react {
+    left: 60% !important;
+    top: -465px !important;
+  }
+  .location-div {
+    left: 85% !important;
+    top: -34px !important;
+    width: 50px !important;
+  }
+  .photo-ok {
+    top: -25px !important;
+  }
+}
+
+.word-length {
+  position: absolute;
+  bottom: 1%;
+  font-size: 12px;
+  color: cornflowerblue;
+}
+/*# sourceMappingURL=messenger.css.map */

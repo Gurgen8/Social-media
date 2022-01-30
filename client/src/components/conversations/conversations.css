@@ -1,0 +1,293 @@
+.conversation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  height: 50px;
+}
+
+.conversation .fa-eraser {
+  font-size: 18px !important;
+  color: cornflowerblue;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.conversation .fa-eraser:hover {
+  color: red;
+  font-size: 22px !important;
+}
+
+.conversation .callicon {
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+}
+
+.conversation:hover {
+  background-color: #f5f3f3;
+}
+
+.conversationImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 20px;
+}
+
+.conversationName {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.convert-typing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.convert-typing .typing {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.dot-typing {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: red;
+  color: red;
+  -webkit-box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+          box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  -webkit-animation: dotTyping 1.5s infinite linear;
+          animation: dotTyping 1.5s infinite linear;
+}
+
+@-webkit-keyframes dotTyping {
+  0% {
+    -webkit-box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+            box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  16.667% {
+    -webkit-box-shadow: 9984px -10px 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+            box-shadow: 9984px -10px 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  33.333% {
+    -webkit-box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+            box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  50% {
+    -webkit-box-shadow: 9984px 0 0 0 #9880ff, 9999px -10px 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+            box-shadow: 9984px 0 0 0 #9880ff, 9999px -10px 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  66.667% {
+    -webkit-box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+            box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  83.333% {
+    -webkit-box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px -10px 0 0 #9880ff;
+            box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px -10px 0 0 #9880ff;
+  }
+  100% {
+    -webkit-box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+            box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+}
+
+@keyframes dotTyping {
+  0% {
+    -webkit-box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+            box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  16.667% {
+    -webkit-box-shadow: 9984px -10px 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+            box-shadow: 9984px -10px 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  33.333% {
+    -webkit-box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+            box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  50% {
+    -webkit-box-shadow: 9984px 0 0 0 #9880ff, 9999px -10px 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+            box-shadow: 9984px 0 0 0 #9880ff, 9999px -10px 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  66.667% {
+    -webkit-box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+            box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  83.333% {
+    -webkit-box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px -10px 0 0 #9880ff;
+            box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px -10px 0 0 #9880ff;
+  }
+  100% {
+    -webkit-box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+            box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+}
+
+.message-loader {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #C9CBCB;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  padding: 0 5px;
+  position: relative;
+  width: 80px;
+  margin-left: 5px;
+}
+
+.message-loader .loader-bar {
+  -webkit-animation: chat-typing-bar 1.5s infinite;
+          animation: chat-typing-bar 1.5s infinite;
+  border-radius: 5px;
+  height: 8px;
+  left: 5px;
+  position: absolute;
+}
+
+.conversationName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes chat-typing-bar {
+  0% {
+    width: 8px;
+  }
+  25% {
+    width: calc(100% - 10px);
+  }
+  50% {
+    width: 8px;
+  }
+  75% {
+    width: calc(100% - 10px);
+  }
+  100% {
+    width: 8px;
+  }
+  25% {
+    left: 5px;
+  }
+  50% {
+    left: calc(100% - 13px);
+  }
+  75% {
+    left: 5px;
+  }
+  0% {
+    background: #65B360;
+  }
+  50% {
+    background: #52994D;
+  }
+  100% {
+    background: #65B360;
+  }
+}
+
+@keyframes chat-typing-bar {
+  0% {
+    width: 8px;
+  }
+  25% {
+    width: calc(100% - 10px);
+  }
+  50% {
+    width: 8px;
+  }
+  75% {
+    width: calc(100% - 10px);
+  }
+  100% {
+    width: 8px;
+  }
+  25% {
+    left: 5px;
+  }
+  50% {
+    left: calc(100% - 13px);
+  }
+  75% {
+    left: 5px;
+  }
+  0% {
+    background: #65B360;
+  }
+  50% {
+    background: #52994D;
+  }
+  100% {
+    background: #65B360;
+  }
+}
+
+@-webkit-keyframes chat-typing-indicator {
+  0% {
+    top: 0;
+  }
+  6.25% {
+    top: -1px;
+  }
+  12.5% {
+    top: 0;
+  }
+  18.75% {
+    top: 1px;
+  }
+  25% {
+    top: 0;
+  }
+  12.5% {
+    background: #65B360;
+  }
+}
+
+@keyframes chat-typing-indicator {
+  0% {
+    top: 0;
+  }
+  6.25% {
+    top: -1px;
+  }
+  12.5% {
+    top: 0;
+  }
+  18.75% {
+    top: 1px;
+  }
+  25% {
+    top: 0;
+  }
+  12.5% {
+    background: #65B360;
+  }
+}
+/*# sourceMappingURL=conversations.css.map */

@@ -1,0 +1,16 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "description": "socket-api",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -r esm index.js"
+  },
+  "author": "Gurgen Mkrtchyan",
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.4.0"
+  }
+}

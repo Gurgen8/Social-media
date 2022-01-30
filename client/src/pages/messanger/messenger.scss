@@ -1,0 +1,646 @@
+.messenger {
+  height: 100vh;
+  display: flex;
+  end .clear-all-messages {
+    width: 100%;
+    height: 50px;
+    background-color: firebrick !important;
+    font-size: 20px;
+    position: sticky;
+    text-align: center;
+  }
+
+  .callicon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  .go-back {
+    background: cornflowerblue !important;
+    color: white;
+    border: none;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: cornflowerblue !important;
+}
+
+.fa-gift {
+  color: firebrick;
+}
+
+.gift-section {
+  width: 300px;
+  height: 300px;
+  background-color: gainsboro;
+  position: absolute;
+  top: -400px;
+  overflow-y: scroll;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: -5px -4px 10px firebrick;
+  overflow-x: hidden;
+
+  button {
+    //  position: absolute;
+
+    position: fixed;
+    height: 50px;
+  }
+
+  .gift-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 45px;
+  }
+
+  img {
+    width: 95px;
+    height: 90px;
+    cursor: pointer;
+  }
+
+  input {
+    width: 285px;
+    height: 50px;
+    padding: 15px;
+    border: 3px solid firebrick;
+    position: fixed;
+    padding-left: 40px;
+  }
+}
+
+.chatMenu {
+  flex: 2;
+  background: whitesmoke !important;
+  padding-top: 50px;
+}
+
+.chatMenuInput {
+  width: 90%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid gray;
+  resize: none;
+  outline: none;
+}
+
+.chatBox {
+  flex: 5.5;
+}
+
+.chatBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.chatBoxTop {
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 10px;
+  padding-top: 30px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.chatBoxBottom {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  i {
+    cursor: pointer !important;
+  }
+
+  .emoji-picker-react {
+    position: absolute !important;
+    top: -1550% !important;
+  }
+}
+
+.chatMessageInput {
+  width: 80%;
+  height: 130px !important;
+  padding: 10px;
+  outline: none;
+  resize: none;
+}
+
+.chatSubmitButton {
+  width: 70px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+}
+
+.chatOnline {
+  flex: 2;
+  background-color: whitesmoke;
+}
+
+.chatMenuWrapper,
+.chatBoxWrapper,
+.chatOnlineWrapper {
+  padding: 10px;
+  height: 100%;
+}
+
+.chatMenuWrapper {
+  overflow-y: scroll;
+  flex: 3;
+}
+
+.noConversationText {
+  position: absolute;
+  top: 10%;
+  font-size: 50px;
+  color: rgb(224, 220, 220);
+  cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+  .chatMenu {
+    flex: 1;
+    background: whitesmoke !important;
+  }
+
+  .chatMenuInput {
+    display: none;
+  }
+
+  .chatBox {
+    flex: 10;
+  }
+
+  .chatOnline {
+    flex: 1px;
+  }
+}
+
+.location-div {
+  position: absolute;
+  top: -28%;
+  border-bottom: 4px solid red;
+  left: 60%;
+
+  i {
+    color: red !important;
+    font-size: 30px !important;
+    cursor: auto !important;
+    margin-left: 10px;
+  }
+
+  .fa-times {
+    font-size: 15px !important;
+    position: absolute;
+    left: 50%;
+    color: black !important;
+    top: -20%;
+    cursor: pointer !important;
+  }
+}
+
+.file-send {
+  position: absolute;
+  bottom: -30%;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 50px;
+
+  form {
+    margin-left: 20px;
+  }
+}
+
+.messenger {
+  .shareImgContainer {
+    width: 250px !important;
+    height: 500px;
+    position: relative !important;
+    padding: 0 !important;
+
+    button {
+      right: 0;
+    }
+
+    img {
+      width: 100% !important;
+      height: 100% !important;
+      position: absolute !important;
+    }
+  }
+}
+
+.messageText {
+  border: thin solid #ccc;
+  line-height: 1.7;
+  font-family: "Inter", sans-serif;
+  max-width: 70ch;
+  white-space: normal;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.send-form {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5px;
+  margin-bottom: 30px;
+  button {
+    margin-right: 20px;
+  }
+}
+
+.photo-ok {
+  position: absolute;
+  left: 0 !important;
+  top: -20% !important;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.messenger {
+  .shareCancelImg {
+    color: black;
+    background: transparent !important;
+    top: 91.5%;
+    border: none !important;
+    position: absolute;
+    right: -1.5% !important;
+    &:hover {
+      color: red !important;
+    }
+  }
+}
+
+.shareVideoContainer {
+  position: relative;
+  margin-bottom: -15px;
+
+  video {
+    width: 300px;
+    height: 300px;
+  }
+  button {
+    background: transparent;
+    border: none;
+
+    i {
+      color: red;
+      position: absolute;
+      top: 10%;
+    }
+  }
+}
+
+.fa-paper-plane-o {
+  font-size: 18px !important;
+  margin-bottom: -10px;
+}
+
+.videorecord {
+  width: 100%;
+  height: 100%;
+
+  p {
+    color: red;
+  }
+
+  .start {
+    background: seagreen;
+  }
+  .stop {
+    background: red;
+  }
+  .close {
+    background: cornflowerblue;
+  }
+
+  video {
+    width: 100%;
+    height: 80%;
+  }
+}
+
+.shareImgContainer {
+  audio {
+    position: absolute !important;
+    bottom: 0 !important;
+    padding: 0;
+    margin: 0;
+  }
+  i {
+    font-size: 24px !important;
+  }
+
+  .shareCancemuzik {
+    position: absolute !important;
+    right: -20% !important;
+    background-color: transparent !important;
+    border: none;
+    bottom: -2%;
+    :hover {
+      color: red;
+    }
+  }
+}
+
+.fa-check-square {
+  transition: all 0.4s;
+  &:hover {
+    color: green !important;
+  }
+}
+
+.shareCancelImg {
+  color: black !important;
+
+  &:hover {
+    color: red !important;
+  }
+}
+
+.shareVideo {
+  width: 100% !important;
+  height: 270px;
+  margin-bottom: 17px;
+}
+
+.giphy {
+  width: 30px;
+  height: 30px;
+}
+
+.friend-div {
+  cursor: pointer;
+}
+.friend-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.conv-title {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+
+.videorecord-button {
+  display: flex;
+
+  button {
+    width: 120px;
+    height: 40px;
+    margin: 0in;
+    border: 1px solid black !important;
+  }
+}
+
+.chatMenuWrapper {
+  flex: 3;
+}
+
+.convert-button {
+  display: none;
+}
+
+.chatOnline-menu {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .chatMenuWrapper {
+    width: 0;
+    position: absolute;
+    left: -60%;
+  }
+
+  .messenger {
+    .go-back {
+      position: absolute;
+      left: 87% !important;
+    }
+  }
+
+  .chatMenuWrapper {
+    padding: 0;
+  }
+
+  .convert-button {
+    display: block;
+    position: fixed;
+    top: 1.5%;
+    z-index: 9999;
+    border: none;
+    background-color: transparent;
+    color: white;
+    left: 2%;
+  }
+}
+
+.back {
+  position: fixed;
+  left: -1%;
+  top: -0.4%;
+  height: 10px;
+  z-index: 999;
+  color: whitesmoke;
+  display: none;
+
+  i {
+    font-size: 14px !important;
+  }
+}
+
+.open-onlines {
+  height: 30px;
+  position: fixed;
+  left: 12%;
+  z-index: 999;
+  border: none;
+  background-color: transparent;
+  color: whitesmoke;
+  top: 1.5%;
+  margin-right: 20px;
+  display: none;
+}
+
+.cahtMenu-open {
+  width: 300px;
+  position: fixed;
+  left: 0;
+  z-index: 2;
+  transition: all 0.9s;
+}
+
+.chatOnline-menu {
+  flex: 3;
+  margin-top: 20px;
+}
+
+.topbar-none {
+  display: flex;
+  flex: 5;
+}
+
+.noConversationText {
+  font-size: 35px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .shareCancelImg {
+    top: 98% !important;
+  }
+
+  .messenger {
+    .shareImgContainer {
+      height: 350px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .chatMenu {
+    box-shadow: 7px 5px 5px cornflowerblue;
+  }
+
+  .chatonline-open {
+    box-shadow: -0px 5px 5px cornflowerblue;
+  }
+
+  .word-length {
+    bottom: 87% !important;
+  }
+
+  .messenger {
+  }
+  .topbar-none {
+    display: none;
+  }
+
+  .messenger {
+    .go-back {
+      display: none;
+    }
+  }
+  .chatOnline-menu {
+    flex: 0;
+  }
+
+  .open-onlines {
+    display: block;
+  }
+
+  .chatOnlineWrapper {
+    padding: 0;
+    position: absolute;
+  }
+
+  .noConversationText {
+    margin-top: 100px;
+  }
+
+  .back {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .gift-section {
+    left: 50%;
+    top: -445px;
+    .fa-search {
+      display: flex !important;
+    }
+  }
+
+  .shareVideoContainer {
+    video {
+      width: 200px;
+      height: 250px;
+    }
+  }
+
+  .messenger {
+    .callicon {
+      right: 100px;
+      position: absolute;
+      bottom: 3%;
+    }
+    .shareCancelImg {
+      top: 85% !important;
+    }
+
+    .shareImgContainer {
+      height: 250px !important ;
+    }
+  }
+
+  .chatBoxBottom {
+    display: block;
+    textarea {
+      width: 100%;
+    }
+
+    .word-length {
+      bottom: 92% !important;
+      left: 0;
+    }
+  }
+
+  .send-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .file-send {
+    bottom: -30px;
+    left: -50%;
+    display: flex;
+    .emoji-picker-react {
+      left: 60% !important;
+      top: -465px !important;
+    }
+  }
+
+  .location-div {
+    left: 85% !important;
+    top: -34px !important;
+    width: 50px !important;
+  }
+
+  .photo-ok {
+    top: -25px !important;
+  }
+}
+
+.word-length {
+  position: absolute;
+  bottom: 1%;
+  font-size: 12px;
+  color: cornflowerblue;
+}
