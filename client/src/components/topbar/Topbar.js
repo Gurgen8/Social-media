@@ -353,43 +353,43 @@ export default function Topbar() {
   ///firebase-notification
 
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    const msg = firebase.messaging();
-    msg.requestPermission().then(() => {
-      return msg.getToken();
-    }).then((data) => {
-      console.log("token", data)
-    })
+  //   const msg = firebase.messaging();
+  //   msg.requestPermission().then(() => {
+  //     return msg.getToken();
+  //   }).then((data) => {
+  //     console.log("token", data)
+  //   })
 
-    msg.onMessage(function (payload) {
-      console.log(payload);
-      const notificationOption = {
-        body: payload.notification.body,
-        icon: payload.notification.icon
-      };
+  //   msg.onMessage(function (payload) {
+  //     console.log(payload);
+  //     const notificationOption = {
+  //       body: payload.notification.body,
+  //       icon: payload.notification.icon
+  //     };
 
-      if (Notification.permission === "granted") {
-        var notification = new Notification(payload.notification.title, notificationOption);
+  //     if (Notification.permission === "granted") {
+  //       var notification = new Notification(payload.notification.title, notificationOption);
         
 
-        notification.onclick = function (ev) {
-          ev.preventDefault();
-          window.open(payload.notification.click_action, '_blank');
-          notification.close();
-        }
-      }
-    });
-    msg.onTokenRefresh(function () {
-      msg.getToken()
-        .then(function (newtoken) {
-          console.log("New Token : " + newtoken);
-        })
-        .catch(function (reason) {
-          console.log(reason);
-        })
-    })
-  }, [])
+  //       notification.onclick = function (ev) {
+  //         ev.preventDefault();
+  //         window.open(payload.notification.click_action, '_blank');
+  //         notification.close();
+  //       }
+  //     }
+  //   });
+  //   msg.onTokenRefresh(function () {
+  //     msg.getToken()
+  //       .then(function (newtoken) {
+  //         console.log("New Token : " + newtoken);
+  //       })
+  //       .catch(function (reason) {
+  //         console.log(reason);
+  //       })
+  //   })
+  // }, [])
 
 
 
